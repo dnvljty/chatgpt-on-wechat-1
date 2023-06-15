@@ -1,0 +1,16 @@
+{
+  "open_ai_api_key": "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",
+  "speech_recognition": true,
+  "voice_reply_voice": false,
+  "baidu_app_id": "31372712",
+  "baidu_api_key": "r45PClXLUiV21GBTHK7lD8fL",
+  "baidu_secret_key": "t2gjmmT8ckW2p2uSTqqG3GCDzphO2Y9z",
+  "wechaty_puppet_service_token":"puppet_padlocal_7cb0c9e0da3449d49341fe27fb8046f5", 
+  "single_chat_prefix": ["bot", "@bot"],
+  "single_chat_reply_prefix": "[bot] ",
+  "group_chat_prefix": ["@bot"],
+  "group_name_white_list": ["ALL_GROUP"],
+  "image_create_prefix": ["画", "看", "找"],
+  "conversation_max_tokens": 1000,
+  "character_desc": "ChatGPT"
+}
