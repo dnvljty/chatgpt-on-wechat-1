@@ -11,7 +11,7 @@ from common.log import logger
 # 此处的配置值无实际意义，程序不会读取此处的配置，仅用于提示格式，请将配置加入到config.json中
 available_setting = {
     # openai api配置
-    "open_ai_api_key": "",  # openai api key
+    "open_ai_api_key": "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",  # openai api key
     # openai apibase，当use_azure_chatgpt为true时，需要设置对应的api base
     "open_ai_api_base": "https://api.openai.com/v1",
     "proxy": "",  # openai使用的代理
@@ -20,15 +20,15 @@ available_setting = {
     "use_azure_chatgpt": False,  # 是否使用azure的chatgpt
     "azure_deployment_id": "",  # azure 模型部署名称
     # Bot触发配置
-    "single_chat_prefix": ["bot", "@bot"],  # 私聊时文本需要包含该前缀才能触发机器人回复
-    "single_chat_reply_prefix": "[bot] ",  # 私聊时自动回复的前缀，用于区分真人
+    "single_chat_prefix": "",  # 私聊时文本需要包含该前缀才能触发机器人回复
+    "single_chat_reply_prefix": "",  # 私聊时自动回复的前缀，用于区分真人
     "group_chat_prefix": ["@bot"],  # 群聊时包含该前缀则会触发机器人回复
     "group_chat_reply_prefix": "",  # 群聊时自动回复的前缀
     "group_chat_keyword": [],  # 群聊时包含该关键词则会触发机器人回复
     "group_at_off": False,  # 是否关闭群聊时@bot的触发
-    "group_name_white_list": ["ChatGPT测试群", "ChatGPT测试群2"],  # 开启自动回复的群名称列表
+    "group_name_white_list": ["ALL_GROUP"],  # 开启自动回复的群名称列表
     "group_name_keyword_white_list": [],  # 开启自动回复的群名称关键词列表
-    "group_chat_in_one_session": ["ChatGPT测试群"],  # 支持会话上下文共享的群名称
+    "group_chat_in_one_session": ["ALL_GROUP"],  # 支持会话上下文共享的群名称
     "trigger_by_self": False,  # 是否允许机器人触发
     "image_create_prefix": ["画", "看", "找"],  # 开启图片回复的前缀
     "concurrency_in_session": 1,  # 同一会话最多有多少条消息在处理中，大于1可能乱序
@@ -55,9 +55,9 @@ available_setting = {
     "voice_to_text": "openai",  # 语音识别引擎，支持openai,baidu,google,azure
     "text_to_voice": "baidu",  # 语音合成引擎，支持baidu,google,pytts(offline),azure
     # baidu 语音api配置， 使用百度语音识别和语音合成时需要
-    "baidu_app_id": "",
-    "baidu_api_key": "",
-    "baidu_secret_key": "",
+    "baidu_app_id": "31372712",
+    "baidu_api_key": "r45PClXLUiV21GBTHK7lD8fL",
+    "baidu_secret_key": "t2gjmmT8ckW2p2uSTqqG3GCDzphO2Y9z",
     # 1536普通话(支持简单的英文识别) 1737英语 1637粤语 1837四川话 1936普通话远场
     "baidu_dev_pid": "1536",
     # azure 语音api配置， 使用azure语音识别和语音合成时需要
@@ -75,7 +75,7 @@ available_setting = {
     # itchat的配置
     "hot_reload": False,  # 是否开启热重载
     # wechaty的配置
-    "wechaty_puppet_service_token": "",  # wechaty的token
+    "wechaty_puppet_service_token": "puppet_padlocal_7cb0c9e0da3449d49341fe27fb8046f5",  # wechaty的token
     # wechatmp的配置
     "wechatmp_token": "",  # 微信公众平台的Token
     "wechatmp_port": 8080,  # 微信公众平台的端口,需要端口转发到80或443
